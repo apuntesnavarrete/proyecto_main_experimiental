@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/3a6e8db9a7.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="proyecto_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+</head>
+<body>
+    <header id="contenedor_general">
+        <nav>
+            <div>
+                <h1 id="palabra_todo">#todo</h1>
+            </div>
+            <div >
+               <ul id="contenedor_all_active_completed">
+                    <li data-target="#ALL" class="NAV"><button id="btn1">All</button></li>
+                    <li data-target="#AC" class="NAV" id="active"><button id="btn2">Active</button></li>
+                    <li data-target="#CO" class="NAV" id="completed"><button id="btn3">Completed</button></li>
+               </ul>
+            </div>
+            <div id="rectangulo"></div>
+            <hr>
+            <div id="contenedor_añadir_tareas">
+                    <form id="caja_de_texto">
+                        <div id="contenedor">
+                            <input id="escribir_texto" type="text" placeholder="add details">
+                        </div>
+                        <button id="boton_add" type="submit">Add</button>
+                    </form>
+            </div>
+        </nav>
+    </header>
+
+    <div data-content id="ALL" class="active" >
+        <div id="tasks"><s></s></div>
+        <ul class="lista" id="lista" >
+        </ul>
+    </div>
+
+
+<!-- 
+    <div data-content id="AC">
+        <div id="rectangulo_dos"></div>
+        <h1></h1>
+        <div id="tasks_active"><s></s></div>
+    </div>
+ -->
+
+
+    <!-- <div data-content id="CO">
+        <div id="rectangulo_tres"></div>
+        <h1></h1>
+        <div id="tasks_completed"><s></s></div>
+    </div> -->
+    
+    <script src="proyecto_main_experimiental.js" defer></script>
+</body>
+</html>
